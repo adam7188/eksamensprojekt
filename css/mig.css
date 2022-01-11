@@ -21,7 +21,6 @@ h4 {
     grid-template-columns: 1fr 1fr;
     padding-top: 5rem;
     margin: 1rem;
-    margin-bottom: 10rem;
   }
 
   .tekst {
@@ -34,5 +33,12 @@ h4 {
 
   h4 {
     margin: 1rem;
+  }
+  #section_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+    margin: 1rem;
+    margin-bottom: 5rem;
   }
 }
