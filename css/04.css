@@ -15,6 +15,10 @@ h4 {
   margin: 1rem;
 }
 
+.video {
+  border: none;
+}
+
 @media (min-width: 600px) {
   #section_2 {
     display: grid;
