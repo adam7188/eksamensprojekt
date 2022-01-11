@@ -12,10 +12,6 @@ body {
   .titel {
     font-size: 8rem;
   }
-
-  h1:hover {
-    color: yellow;
-  }
 }
 
 #videoBG {
