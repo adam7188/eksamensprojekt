@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SAMME BAGGRUNDS-FARVE OG BILLEDE PÅ ALLE SIDER */
+
+body {
+  background-color: #0e0e0e;
+  background-image: url(http://adamfabricius.dk/kea/06_portfolio/eksamensprojekt/billeder/baggrundsbillede.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* background-repeat: space betyder "The background-image is repeated as much as possible without clipping. The first and last image is pinned to either side of the element, and whitespace is distributed evenly between the images" */
+
+  /* repeat eller ej og auto eller contain? */
+}
+
+/* MARGIN PÅ ALLE SIDER */
+
+main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+/* HOVEDET PÅ ALLE TEMA SIDER */
+#section_1 {
+  display: block;
+  text-align: center;
+}
+
+/* ALLE OVERSKRIFTER, PARAGRAPHS OG LINKS */
+
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 8px ghostwhite;
+}
+
+h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 8px ghostwhite;
+}
+
+h3 {
+  font-family: "Staatliches", cursive;
+  color: white;
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-family: "Staatliches", cursive;
+  font-size: 1.3rem;
+  color: white;
+  /* text-shadow: 2px 2px 8px ghostwhite; */
+}
+
+p {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: white;
+  margin: 1rem;
+}
+
+.links {
+  font-family: "Staatliches", cursive;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+/* BILLEDER OG VIDEOER */
+
+img {
+  max-width: 100%;
+  height: auto;
+  /* box-shadow: 1px 1px 5px 5px ghostwhite; */
+}
+
+iframe {
+  max-width: 100%;
+  /* box-shadow: 1px 1px 5px 5px ghostwhite; */
+}
+
+/* NAV-BAREN OG BURGERMENU */
+
+nav {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  padding: 1.5vh;
+  margin: 30px;
+}
+
+nav ul {
+  position: absolute;
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #0e0e0e;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: "Staatliches", cursive;
+  border-right-style: none;
+  color: white;
+  text-shadow: 2px 2px 8px ghostwhite;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+#menuknap {
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 85vw;
+  color: white;
+}
+
+.hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+@media (min-width: 600px) {
+  #menuknap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #menu li {
+    display: inline-block;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #0e0e0e;
+    padding: 5px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: "Staatliches", cursive;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  nav {
+    font-family: "Staatliches", cursive;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px ghostwhite;
+  }
+}

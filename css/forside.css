@@ -1,0 +1,33 @@
+/* h1 {
+  padding-top: 10rem;
+  padding-left: 5rem;
+}
+
+h2 {
+  padding-left: 5rem;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    padding-top: 10rem;
+    padding-left: 5rem;
+  }
+
+  h2 {
+    padding-left: 5rem;
+  }
+} */
+
+/* h1:hover {
+  color: gold;
+} */
+
+body {
+  height: 100vw;
+  width: 100vw;
+}
+
+#section_1 {
+  padding-top: 5rem;
+  margin: 1rem;
+}
