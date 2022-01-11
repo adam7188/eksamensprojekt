@@ -36,7 +36,7 @@ body {
     display: none;
   }
   body {
-    background: url(/billeder/baggrundsbillede.webp);
+    background-image: url(http://adamfabricius.dk/kea/06_portfolio/eksamensprojekt/billeder/baggrundsbillede.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #0e0e0e;
