@@ -17,3 +17,32 @@ body {
     color: yellow;
   }
 }
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+  filter: opacity(40%);
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+  body {
+    background: url(/billeder/baggrundsbillede.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #0e0e0e;
+  }
+}
