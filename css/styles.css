@@ -19,10 +19,20 @@ body {
 
 /* MARGIN PÅ ALLE SIDER */
 
+/* sørger for at der er 1 rem left og right og 5rem top, når siden er under 600px*/
 main {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 5rem;
+}
+
+/* sørger for at der er 5rem margin på diverse, når siden er over 600px*/
+@media (min-width: 600px) {
+  main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+  }
 }
 
 /* HOVEDET PÅ ALLE TEMA SIDER */
